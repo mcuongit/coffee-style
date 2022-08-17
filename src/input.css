@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mc-menu-expanded {
+  @apply absolute left-0 z-50 w-1/2 bg-white top-0 text-base p-5 pl-8 animate-slideLeft h-screen;
+}
+
+.mc-top-menu-items {
+  @apply py-1 hover:text-gray-800 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-orange-500 after:transition-all after:ease-in-out after:duration-300;
+}
+
+.mc-subheadline {
+  @apply flex justify-center items-center mb-24;
+}
+.mc-deco-line {
+  @apply w-8 h-px bg-gray-200;
+}
+.mc-subheadline-label {
+  @apply uppercase mx-4 text-[12px] font-medium tracking-widest text-gray-500 text-center;
+}

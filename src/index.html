@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../dist/output.css" rel="stylesheet">
+    <script src="./main.js" async></script>
+    <title>ManhCuong - Learn Tailwindcss</title>
+</head>
+
+<body>
+    <div class="root">
+        <div class="content-wrapper font-Karla max-w-screen-xl mx-auto relative px-4">
+            <header class="p-6">
+                <nav class="flex justify-around items-center">
+                    <div class="logo basis-2/6 text-center text-xl font-semibold">CoffeeStyle.</div>
+                    <ul id="mc-top-menu"
+                        class="uppercase basis-3/6 hidden lg:flex lg:gap-8 text-xs font-medium text-gray-500">
+                        <li class="mc-top-menu-items">
+                            <a href="#" class="">home</a>
+                        </li>
+                        <li class="mc-top-menu-items"><a href="#">products</a></li>
+                        <li class="mc-top-menu-items"><a href="#">blog</a></li>
+                        <li class="mc-top-menu-items"><a href="#">about</a></li>
+                        <li class="mc-top-menu-items"><a href="#">contact</a></li>
+                        <li class="mc-top-menu-items"><a href="#">styleguide</a></li>
+                    </ul>
+                    <ul class="basis-3/6 lg:basis-1/6 uppercase flex text-xs font-medium lg:justify-start justify-end">
+                        <li class="mc-top-menu-items ml-8">
+                            <a href="#" class="flex items-center">
+                                <div class="cart-icon inline-block">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                                    </svg>
+                                </div>
+                                <span class="mx-2">cart</span>
+                                <span class="rounded-full bg-orange-400 text-white px-2">10</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="basis-1/6 lg:hidden flex items-center cursor-pointer px-4">
+                        <svg id="mc-toggle-menu-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </div>
+                </nav>
+            </header>
+            <main>
+                <div class="slider h-[530px] bg-[url('../src/images/slider-bg.jpg')] bg-bottom bg-no-repeat bg-cover">
+                    <div class="w-full h-full flex justify-center items-center bg-gray-900 bg-opacity-30">
+                        <div class="text-white text-center mx-16">
+                            <div class="uppercase mb-6 font-bold text-gray-300">BEST PLACE TO BUY DESIGN</div>
+                            <div class="text-5xl mb-6 font-medium">Coffee Mugs</div>
+                            <div class="text-lg mb-6 font-medium">The most versatile furniture system ever created.
+                                Designed to fit your life,
+                                made to move and grow.</div>
+                            <div class="flex justify-center">
+                                <div
+                                    class="uppercase bg-white text-gray-900 w-max tracking-wider px-6 py-4 text-sm font-semibold cursor-pointer hover:bg-opacity-95 rounded-3xl">
+                                    EXPLORE OUR PRODUCTS
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end slider -->
+                <div class="story">
+                    <div class="w-full h-full justify-center items-center">
+                        <div class="px-8 sm:px-16 md:px-32 lg:px-64 xl:px-96 py-32 text-center">
+                            <div class="text-3xl leading-10 mb-6">Even the all-powerful Pointing has no control about
+                                the blind
+                                texts.</div>
+                            <div class="text-gray-500 leading-7 mb-6">It is a paradisematic country, in which roasted
+                                parts of sentences fly into your mouth.
+                                Even the all-powerful Pointing
+                                has no control about the blind texts it is an almost unorthographic life One day however
+                                a small line of blind text by
+                                the name of Lorem Ipsum decided to leave for the far World of Grammar.</div>
+                            <div>
+                                <a href="#"
+                                    class="text-orange-400 hover:text-orange-600 relative after:absolute after:-bottom-2 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-orange-500 after:transition-all after:ease-in-out after:duration-300">Read
+                                    the full
+                                    Story</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end story -->
+                <div class="mc-subheadline">
+                    <div class="mc-deco-line"></div>
+                    <div class="mc-subheadline-label">featured mugs</div>
+                    <div class="mc-deco-line"></div>
+                </div>
+                <div class="featured-mugs w-[95%] md:w-[75%] lg:w-[65%] mx-auto mb-24">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-4">
+                        <div class="mc-product-card h-[540px] mb-24">
+                            <div
+                                class="h-[540px] bg-[url('../src/images/featured-mugs-1.jpg')] bg-center bg-no-repeat bg-cover">
+                                <a href="#">
+                                    <div
+                                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-300 relative group">
+                                        <div
+                                            class="absolute uppercase bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 text-center tracking-wider px-6 py-4 text-sm font-semibold cursor-pointer hover:bg-opacity-95 hidden group-hover:block group-hover:animate-fadeIn">
+                                            Explore Mug</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="text-center mt-8">
+                                <a href="#">
+                                    <div class="text-xl mb-3 hover:text-orange-500">Pink Premium Ceramic</div>
+                                </a>
+                                <div class="">
+                                    <span class="ml-2 text-gray-500">$99.00 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mc-product-card h-[540px] mb-24">
+                            <div
+                                class="h-[540px] bg-[url('../src/images/featured-mugs-2.jpg')] bg-center bg-no-repeat bg-cover">
+                                <a href="#">
+                                    <div
+                                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-300 relative group">
+                                        <div
+                                            class="absolute w-24 bg-white py-2 px-4 top-3 right-3 text-center font-semibold text-orange-400">
+                                            On Sale.</div>
+                                        <div
+                                            class="absolute uppercase bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 text-center tracking-wider px-6 py-4 text-sm font-semibold cursor-pointer hover:bg-opacity-95 hidden group-hover:block group-hover:animate-fadeIn">
+                                            Explore Mug</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="text-center mt-8">
+                                <a href="#">
+                                    <div class="text-xl mb-3 hover:text-orange-500">Golden Designers Mug</div>
+                                </a>
+                                <div class="">
+                                    <span class="text-lg text-orange-400">$50.00</span>
+                                    <span class="ml-2 text-gray-400 line-through">$69.00 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end featured-mugs -->
+                <div class="mc-subheadline">
+                    <div class="mc-deco-line"></div>
+                    <div class="mc-subheadline-label">more products</div>
+                    <div class="mc-deco-line"></div>
+                </div>
+                <div class="more-products w-[95%] md:w-[85%] lg:w-[75%] mx-auto mb-24">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-4">
+                        <div class="mc-more-products h-[340px] mb-24">
+                            <div class="h-[340px] bg-[url('../src/images/m1.jpg')] bg-center bg-no-repeat bg-cover">
+                                <a href="#">
+                                    <div
+                                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-300 relative group">
+                                        <div
+                                            class="absolute uppercase bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 text-center tracking-wider px-6 py-4 text-sm font-semibold cursor-pointer hover:bg-opacity-95 hidden group-hover:block group-hover:animate-fadeIn">
+                                            Explore Mug</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="text-center mt-8">
+                                <a href="#">
+                                    <div class="text-xl mb-3 hover:text-orange-500">Pink Premium Ceramic</div>
+                                </a>
+                                <div class="">
+                                    <span class="ml-2 text-gray-500">$99.00 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mc-product-card h-[340px] mb-24">
+                            <div class="h-[340px] bg-[url('../src/images/m2.jpg')] bg-center bg-no-repeat bg-cover">
+                                <a href="#">
+                                    <div
+                                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-300 relative group">
+                                        <div
+                                            class="absolute w-24 bg-white py-2 px-4 top-3 right-3 text-center font-semibold text-orange-400">
+                                            On Sale.</div>
+                                        <div
+                                            class="absolute uppercase bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 text-center tracking-wider px-6 py-4 text-sm font-semibold cursor-pointer hover:bg-opacity-95 hidden group-hover:block group-hover:animate-fadeIn">
+                                            Explore Mug</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="text-center mt-8">
+                                <a href="#">
+                                    <div class="text-xl mb-3 hover:text-orange-500">Golden Designers Mug</div>
+                                </a>
+                                <div class="">
+                                    <span class="text-lg text-orange-400">$50.00</span>
+                                    <span class="ml-2 text-gray-400 line-through">$69.00 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mc-product-card h-[340px] mb-24">
+                            <div class="h-[340px] bg-[url('../src/images/m3.jpg')] bg-center bg-no-repeat bg-cover">
+                                <a href="#">
+                                    <div
+                                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-300 relative group">
+                                        <div
+                                            class="absolute w-24 bg-white py-2 px-4 top-3 right-3 text-center font-semibold text-orange-400">
+                                            On Sale.</div>
+                                        <div
+                                            class="absolute uppercase bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 text-center tracking-wider px-6 py-4 text-sm font-semibold cursor-pointer hover:bg-opacity-95 hidden group-hover:block group-hover:animate-fadeIn">
+                                            Explore Mug</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="text-center mt-8">
+                                <a href="#">
+                                    <div class="text-xl mb-3 hover:text-orange-500">Golden Designers Mug</div>
+                                </a>
+                                <div class="">
+                                    <span class="text-lg text-orange-400">$50.00</span>
+                                    <span class="ml-2 text-gray-400 line-through">$69.00 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mc-more-products h-[340px] mb-24">
+                            <div class="h-[340px] bg-[url('../src/images/m4.jpg')] bg-center bg-no-repeat bg-cover">
+                                <a href="#">
+                                    <div
+                                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-300 relative group">
+                                        <div
+                                            class="absolute uppercase bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 text-center tracking-wider px-6 py-4 text-sm font-semibold cursor-pointer hover:bg-opacity-95 hidden group-hover:block group-hover:animate-fadeIn">
+                                            Explore Mug</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="text-center mt-8">
+                                <a href="#">
+                                    <div class="text-xl mb-3 hover:text-orange-500">Pink Premium Ceramic</div>
+                                </a>
+                                <div class="">
+                                    <span class="ml-2 text-gray-500">$99.00 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mc-product-card h-[340px] mb-24">
+                            <div class="h-[340px] bg-[url('../src/images/m5.jpg')] bg-center bg-no-repeat bg-cover">
+                                <a href="#">
+                                    <div
+                                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-300 relative group">
+                                        <div
+                                            class="absolute w-24 bg-white py-2 px-4 top-3 right-3 text-center font-semibold text-orange-400">
+                                            On Sale.</div>
+                                        <div
+                                            class="absolute uppercase bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 text-center tracking-wider px-6 py-4 text-sm font-semibold cursor-pointer hover:bg-opacity-95 hidden group-hover:block group-hover:animate-fadeIn">
+                                            Explore Mug</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="text-center mt-8">
+                                <a href="#">
+                                    <div class="text-xl mb-3 hover:text-orange-500">Golden Designers Mug</div>
+                                </a>
+                                <div class="">
+                                    <span class="text-lg text-orange-400">$50.00</span>
+                                    <span class="ml-2 text-gray-400 line-through">$69.00 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mc-product-card h-[340px] mb-24">
+                            <div class="h-[340px] bg-[url('../src/images/m6.jpg')] bg-center bg-no-repeat bg-cover">
+                                <a href="#">
+                                    <div
+                                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-300 relative group">
+                                        <div
+                                            class="absolute w-24 bg-white py-2 px-4 top-3 right-3 text-center font-semibold text-orange-400">
+                                            On Sale.</div>
+                                        <div
+                                            class="absolute uppercase bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 text-center tracking-wider px-6 py-4 text-sm font-semibold cursor-pointer hover:bg-opacity-95 hidden group-hover:block group-hover:animate-fadeIn">
+                                            Explore Mug</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="text-center mt-8">
+                                <a href="#">
+                                    <div class="text-xl mb-3 hover:text-orange-500">Golden Designers Mug</div>
+                                </a>
+                                <div class="">
+                                    <span class="text-lg text-orange-400">$50.00</span>
+                                    <span class="ml-2 text-gray-400 line-through">$69.00 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mc-more-products h-[340px] mb-24">
+                            <div class="h-[340px] bg-[url('../src/images/m7.jpg')] bg-center bg-no-repeat bg-cover">
+                                <a href="#">
+                                    <div
+                                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-300 relative group">
+                                        <div
+                                            class="absolute uppercase bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 text-center tracking-wider px-6 py-4 text-sm font-semibold cursor-pointer hover:bg-opacity-95 hidden group-hover:block group-hover:animate-fadeIn">
+                                            Explore Mug</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="text-center mt-8">
+                                <a href="#">
+                                    <div class="text-xl mb-3 hover:text-orange-500">Pink Premium Ceramic</div>
+                                </a>
+                                <div class="">
+                                    <span class="ml-2 text-gray-500">$99.00 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mc-product-card h-[340px] mb-24">
+                            <div class="h-[340px] bg-[url('../src/images/m8.jpg')] bg-center bg-no-repeat bg-cover">
+                                <a href="#">
+                                    <div
+                                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-300 relative group">
+                                        <div
+                                            class="absolute w-24 bg-white py-2 px-4 top-3 right-3 text-center font-semibold text-orange-400">
+                                            On Sale.</div>
+                                        <div
+                                            class="absolute uppercase bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 text-center tracking-wider px-6 py-4 text-sm font-semibold cursor-pointer hover:bg-opacity-95 hidden group-hover:block group-hover:animate-fadeIn">
+                                            Explore Mug</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="text-center mt-8">
+                                <a href="#">
+                                    <div class="text-xl mb-3 hover:text-orange-500">Golden Designers Mug</div>
+                                </a>
+                                <div class="">
+                                    <span class="text-lg text-orange-400">$50.00</span>
+                                    <span class="ml-2 text-gray-400 line-through">$69.00 USD</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mc-product-card h-[340px] mb-24">
+                            <div class="h-[340px] bg-[url('../src/images/m9.jpg')] bg-center bg-no-repeat bg-cover">
+                                <a href="#">
+                                    <div
+                                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-300 relative group">
+                                        <div
+                                            class="absolute w-24 bg-white py-2 px-4 top-3 right-3 text-center font-semibold text-orange-400">
+                                            On Sale.</div>
+                                        <div
+                                            class="absolute uppercase bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 text-center tracking-wider px-6 py-4 text-sm font-semibold cursor-pointer hover:bg-opacity-95 hidden group-hover:block group-hover:animate-fadeIn">
+                                            Explore Mug</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="text-center mt-8">
+                                <a href="#">
+                                    <div class="text-xl mb-3 hover:text-orange-500">Golden Designers Mug</div>
+                                </a>
+                                <div class="">
+                                    <span class="text-lg text-orange-400">$50.00</span>
+                                    <span class="ml-2 text-gray-400 line-through">$69.00 USD</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- end more-products -->
+                <div class="mc-subheadline">
+                    <div class="mc-deco-line"></div>
+                    <div class="mc-subheadline-label">BUY 2 MUGS AND GET A COFFEE MAGAZINE FREE</div>
+                    <div class="mc-deco-line"></div>
+                </div>
+                <div class="coffee-magazine w-[95%] md:w-[85%] lg:w-[75%] mx-auto mb-24">
+                    <div class="flex flex-col lg:flex-row gap-10 justify-center items-center">
+                        <div class="flex flex-col lg:flex-row gap-5">
+                            <div
+                                class="w-full lg:w-[280px] h-[280px] bg-[url('../src/images/magazine1.jpg')] bg-center bg-no-repeat bg-cover">
+                            </div>
+                            <div class="flex flex-row lg:flex-col gap-5">
+                                <div
+                                    class="w-[160px] h-[130px] bg-[url('../src/images/magazine2.jpg')] bg-center bg-no-repeat bg-cover">
+                                </div>
+                                <div
+                                    class="w-[160px] h-[130px] bg-[url('../src/images/magazine3.jpg')] bg-center bg-no-repeat bg-cover">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-5 items-center lg:items-start">
+                            <div class="uppercase tracking-widest text-sm font-medium text-gray-500">premium offer</div>
+                            <div class="text-4xl">Get our Coffee Magazine</div>
+                            <div class="text-gray-500">The most versatile furniture system ever created. <br> Designed
+                                to fit
+                                your
+                                life.
+                            </div>
+                            <div
+                                class="transition-all duration-300 tracking-widest uppercase px-5 py-4 bg-gray-900 text-white w-max text-xs font-bold text-[12px] hover:bg-gray-700 cursor-pointer">
+                                Start
+                                shopping
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end coffee-magazine -->
+            </main>
+
+        </div>
+        <div class="content-wrapper">
+            <div
+                class="parallax-section mb-24 h-[340px] bg-[url('../src/images/parallax.jpg')] bg-center bg-no-repeat bg-cover bg-fixed">
+            </div>
+            <!-- end parallax -->
+            <div class="mc-subheadline">
+                <div class="mc-deco-line"></div>
+                <div class="mc-subheadline-label">BEHIND THE MUGS, LIFESTYLE STORIES</div>
+                <div class="mc-deco-line"></div>
+            </div>
+            <div class="lifestyle w-[95%] md:w-[85%] lg:w-[75%] mx-auto mb-24">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div>
+                        <div class="h-[300px] bg-[url('../src/images/lf1.jpg')] bg-center bg-no-repeat bg-cover">
+                        </div>
+                        <div class="text-xl mt-8 tracking-wide">Health Check: why do I get a headache when I haven’t
+                            had my
+                            coffee?
+                        </div>
+                        <div class="mt-4 text-gray-500">It is a paradisematic country, in which roasted parts of
+                            sentences fly
+                            into
+                            your mouth.</div>
+                        <div class="mt-4 uppercase tracking-widest font-bold text-gray-400 text-sm">OCTOBER 9, 2018
+                        </div>
+                    </div>
+                    <div>
+                        <div class="h-[300px] bg-[url('../src/images/lf2.jpg')] bg-center bg-no-repeat bg-cover">
+                        </div>
+                        <div class="text-xl mt-8 tracking-wide"><a href="#">How long does a cup of coffee keep you
+                                awake?</a>
+                        </div>
+                        <div class="mt-4 text-gray-500">It is a paradisematic country, in which roasted parts of
+                            sentences fly
+                            into
+                            your mouth.</div>
+                        <div class="mt-4 uppercase tracking-widest font-bold text-gray-400 text-sm">OCTOBER 9, 2018
+                        </div>
+                    </div>
+                    <div>
+                        <div class="h-[300px] bg-[url('../src/images/lf3.jpg')] bg-center bg-no-repeat bg-cover">
+                        </div>
+                        <div class="text-xl mt-8 tracking-wide"><a href="#">Recent research suggests that heavy
+                                coffee drinkers may reap health benefits.</a>
+                        </div>
+                        <div class="mt-4 text-gray-500">It is a paradisematic country, in which roasted parts of
+                            sentences fly
+                            into
+                            your mouth.</div>
+                        <div class="mt-4 uppercase tracking-widest font-bold text-gray-400 text-sm">OCTOBER 9, 2018
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- end lifestyle -->
+            <div class="subcribe-us py-28 bg-gray-900 text-white text-center">
+                <div class="mc-subheadline" style="margin-bottom: 20px;">
+                    <div class="mc-deco-line"></div>
+                    <div class="mc-subheadline-label">SIGN UP AND GET FREE COFFEE BAGS</div>
+                    <div class="mc-deco-line"></div>
+                </div>
+                <div class="text-4xl mb-6">Coffee Updates</div>
+                <div class="flex flex-col md:flex-row justify-center items-center gap-3">
+                    <input
+                        class="block w-5/6 md:w-[350px] text-sm px-6 py-4 bg-transparent border border-gray-500 hover:border-white outline-none placeholder:tracking-widest placeholder:font-medium transition-all duration-300"
+                        type="email" placeholder="CUSTOMER@COFFEESTYLE.IO">
+                    <div
+                        class="uppercase bg-white text-gray-900 w-5/6 md:w-max tracking-wider px-6 py-4 text-sm font-semibold cursor-pointer hover:bg-opacity-95">
+                        subcribe</div>
+                </div>
+            </div>
+            <!-- end subcribe-us -->
+        </div>
+        <div class="content-wrapper font-Karla max-w-screen-xl mx-auto relative px-4">
+            <footer class="lg:w-[75%] mx-auto py-20">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 text-gray-400 gap-10 text-sm">
+                    <div class="">
+                        <div class="logo text-xl font-semibold mb-10 text-gray-900">CoffeeStyle.</div>
+                        <p class="mb-4">Delivering the best coffee life since 1996. From coffee geeks to the real ones.
+                        </p>
+                        <div class="text-gray-300">CoffeeStyle Inc. © 1996</div>
+                    </div>
+                    <div class="">
+                        <div class="uppercase mb-10 font-medium tracking-widest">menu</div>
+                        <ul>
+                            <li>Home</li>
+                            <li>Our Products</li>
+                            <li>About</li>
+                            <li>Contact</li>
+                            <li>Styleguide</li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <div class="uppercase mb-10 font-medium tracking-widest">follow us</div>
+                        <ul>
+                            <li><a href="https://www.facebook.com/nm.cuong2002/" target="_blank">Facebook</a></li>
+                            <li>Instagram</li>
+                            <li>Twitter</li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <div class="uppercase mb-10 font-medium tracking-widest">contact us</div>
+                        <p class="mb-4">We're Always Happy to Help</p>
+                        <div class="text-2xl text-black mb-4"><a
+                                href="mailto:cuong2th2@gmail.com">cuong2th2@gmail.com</a>
+                        </div>
+                        <div class="uppercase">design by manh cuong</div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "taiwindcss",
+  "version": "1.0.0",
+  "description": "manhcuong",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "start": "live-server src"
+  },
+  "keywords": [],
+  "author": "manhcuong",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  },
+  "dependencies": {
+    "live-server": "^1.2.2"
+  }
+}
